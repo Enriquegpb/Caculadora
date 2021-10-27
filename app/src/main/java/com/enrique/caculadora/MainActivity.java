@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void Resultado(View view){
         TextView tvcalc=(TextView) findViewById(R.id.textView);
+        op1=Integer.parseInt(tvcalc.getText().toString());
         op2=Integer.parseInt(tvcalc.getText().toString());
 
         switch (operador){
