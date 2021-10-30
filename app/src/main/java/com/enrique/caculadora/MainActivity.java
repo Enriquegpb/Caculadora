@@ -14,26 +14,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    int op1,op2,resultado;
+
+    int op1, op2, resultado;
     String operador;
 
-    public void Resultado(View view){
-        TextView tvcalc=(TextView) findViewById(R.id.textView);
-        op1=Integer.parseInt(tvcalc.getText().toString());
-        op2=Integer.parseInt(tvcalc.getText().toString());
+    public void Resultado(View view) {
+        TextView tvcalc = (TextView) findViewById(R.id.textView);
+        op1 = Integer.parseInt(tvcalc.getText().toString());
+        op2 = Integer.parseInt(tvcalc.getText().toString());
 
-        switch (operador){
+        switch (operador) {
             case "+":
-                resultado=op1+op2;
+                resultado = op1 + op2;
                 break;
             case "-":
-                resultado=op1-op2;
+                resultado = op1 - op2;
                 break;
             case "*":
-                resultado=op1*op2;
+                resultado = op1 * op2;
                 break;
             case "/":
-                resultado=op1/op2;
+                resultado = op1 / op2;
                 break;
         }
         tvcalc.setText(resultado);
