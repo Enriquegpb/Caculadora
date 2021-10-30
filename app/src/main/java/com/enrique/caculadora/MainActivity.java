@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnigual;
+    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnigual,btnsuma,btnresta,btnmultiplicacion,btndivision,btnc,btndel,btncoma;
     TextView tv;
 
     @Override
@@ -25,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
         btn7 = (Button) findViewById(R.id.button4);
         btn8 = (Button) findViewById(R.id.button5);
         btn9 = (Button) findViewById(R.id.button6);
+        btnsuma = (Button) findViewById(R.id.button14);
+        btnresta = (Button) findViewById(R.id.button15);
+        btnmultiplicacion = (Button) findViewById(R.id.button13);
+        btndivision = (Button) findViewById(R.id.button3);
+        btnc=(Button) findViewById(R.id.button);
+        btndel=(Button) findViewById(R.id.button2);
+        btncoma=(Button) findViewById(R.id.button17);
         btnigual = (Button) findViewById(R.id.button16);
         tv = (TextView) findViewById(R.id.textView);
 
