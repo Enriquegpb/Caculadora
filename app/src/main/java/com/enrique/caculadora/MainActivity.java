@@ -38,58 +38,88 @@ public class MainActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cad+=tv.getText();
+
+
+
             }
         });
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cad+=tv.getText();
+
+
             }
         });
 
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cad+=tv.getText();
+
+
             }
         });
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cad+=tv.getText();
+
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cad+=tv.getText();
+
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cad+=tv.getText();
+
             }
         });
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cad+=tv.getText();
+
             }
         });
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cad+=tv.getText();
+
             }
         });
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cad+=tv.getText();
+
             }
         });
+        btnsuma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        btnresta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        btnmultiplicacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        btndivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+
 
     }
 
@@ -102,15 +132,19 @@ public class MainActivity extends AppCompatActivity {
         switch (operador) {
             case "+":
                 resultado = op1 + op2;
+                tv.setText(resultado);
                 break;
             case "-":
                 resultado = op1 - op2;
+                tv.setText(resultado);
                 break;
             case "*":
                 resultado = op1 * op2;
+                tv.setText(resultado);
                 break;
             case "/":
                 resultado = op1 / op2;
+                tv.setText(resultado);
                 break;
         }
         return resultado;
