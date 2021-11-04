@@ -38,72 +38,62 @@ public class MainActivity extends AppCompatActivity {
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText("0");
-                tv.getText();
+                tv.setText(tv.getText()+"0");
             }
         });
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText("1");
-                tv.getText();
+                tv.setText(tv.getText()+"1");
             }
         });
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText("2");
-                tv.getText();
+                tv.setText(tv.getText()+"2");
             }
         });
 
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText("3");
-                tv.getText();
+                tv.setText(tv.getText()+"3");
             }
         });
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText("4");
-                tv.getText();
+                tv.setText(tv.getText()+"4");
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText("5");
-                tv.getText();
+                tv.setText(tv.getText()+"5");
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText("6");
-                tv.getText();
+                tv.setText(tv.getText()+"6");
             }
         });
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText("7");
-                tv.getText();
+                tv.setText(tv.getText()+"7");
             }
         });
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText("8");
-                tv.getText();
+                tv.setText(tv.getText()+"8");
             }
         });
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText("9");
-                tv.getText();
+                tv.setText(tv.getText()+"9");
             }
         });
         btncoma.setOnClickListener(new View.OnClickListener() {
@@ -116,25 +106,41 @@ public class MainActivity extends AppCompatActivity {
         btnsuma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                op1=tv.getText().toString();
+                operador="+";
+                tv.setText("");
             }
         });
         btnresta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                op1=tv.getText().toString();
+                operador="-";
+                tv.setText("");
             }
         });
         btnmultiplicacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                op1=tv.getText().toString();
+                operador="*";
+                tv.setText("");
             }
         });
         btndivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                op1=tv.getText().toString();
+                operador="/";
+                tv.setText("");
+            }
+        });
 
+        btnigual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                op2=tv.getText().toString();
+                tv.setText(String.valueOf(MetodoCalcularResultado(Integer.parseInt(op1),Integer.parseInt(op2),operador)));
             }
         });
         
@@ -148,19 +154,15 @@ public class MainActivity extends AppCompatActivity {
         switch (operador) {
             case "+":
                 resultado = op1 + op2;
-                tv.setText(resultado);
                 break;
             case "-":
                 resultado = op1 - op2;
-                tv.setText(resultado);
                 break;
             case "*":
                 resultado = op1 * op2;
-                tv.setText(resultado);
                 break;
             case "/":
                 resultado = op1 / op2;
-                tv.setText(resultado);
                 break;
         }
         return resultado;
