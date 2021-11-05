@@ -99,8 +99,7 @@ public class MainActivity extends AppCompatActivity {
         btncoma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText(".");
-                tv.getText();
+                tv.setText(tv.getText()+".");
             }
         });
         btnsuma.setOnClickListener(new View.OnClickListener() {
@@ -143,7 +142,23 @@ public class MainActivity extends AppCompatActivity {
                 tv.setText(String.valueOf(MetodoCalcularResultado(Integer.parseInt(op1),Integer.parseInt(op2),operador)));
             }
         });
-        
+
+        btnc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tv.setText("");
+                op1="";
+                op2="";
+                operador="";
+            }
+        });
+        btndel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tv.setText(tv.getText().subSequence(0,tv.getText().length()-1));
+            }
+        });
+
     }
 
     public int MetodoCalcularResultado(int op1, int op2, String operador) {
