@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 op2=tv.getText().toString();
-                tv.setText(String.valueOf(MetodoCalcularResultado(Integer.parseInt(op1),Integer.parseInt(op2),operador)));
+                tv.setText(String.valueOf(MetodoCalcularResultado(Double.parseDouble(op1),Double.parseDouble(op2),operador)));
             }
         });
 
@@ -161,11 +161,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public int MetodoCalcularResultado(int op1, int op2, String operador) {
-        int resultado = 0;
-        op1 = Integer.parseInt(tv.getText().toString());
-        op2 = Integer.parseInt(tv.getText().toString());
-
+    public Double MetodoCalcularResultado(double op1, double op2, String operador) {
+        Double resultado = 0.0;
         switch (operador) {
             case "+":
                 resultado = op1 + op2;
