@@ -1,38 +1,38 @@
 package com.enrique.caculadora;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
-    Button btn0,btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnigual,btnsuma,btnresta,btnmultiplicacion,btndivision,btnc,btndel,btncoma;
+    ImageButton btn0,btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnigual,btnsuma,btnresta,btnmultiplicacion,btndivision,btnc,btndel,btncoma;
     TextView tv;
     String operador,op1="",op2="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn0 = (Button) findViewById(R.id.button18);
-        btn1 = (Button) findViewById(R.id.button10);
-        btn2 = (Button) findViewById(R.id.button11);
-        btn3 = (Button) findViewById(R.id.button12);
-        btn4 = (Button) findViewById(R.id.button7);
-        btn5 = (Button) findViewById(R.id.button8);
-        btn6 = (Button) findViewById(R.id.button9);
-        btn7 = (Button) findViewById(R.id.button4);
-        btn8 = (Button) findViewById(R.id.button5);
-        btn9 = (Button) findViewById(R.id.button6);
-        btnsuma = (Button) findViewById(R.id.button14);
-        btnresta = (Button) findViewById(R.id.button15);
-        btnmultiplicacion = (Button) findViewById(R.id.button13);
-        btndivision = (Button) findViewById(R.id.button3);
-        btnc=(Button) findViewById(R.id.button);
-        btndel=(Button) findViewById(R.id.button2);
-        btncoma=(Button) findViewById(R.id.button17);
-        btnigual = (Button) findViewById(R.id.button16);
+        btn0 = (ImageButton) findViewById(R.id.cero);
+        btn1 = (ImageButton) findViewById(R.id.uno);
+        btn2 = (ImageButton) findViewById(R.id.dos);
+        btn3 = (ImageButton) findViewById(R.id.tres);
+        btn4 = (ImageButton) findViewById(R.id.cuatro);
+        btn5 = (ImageButton) findViewById(R.id.cinco);
+        btn6 = (ImageButton) findViewById(R.id.seis);
+        btn7 = (ImageButton) findViewById(R.id.siete);
+        btn8 = (ImageButton) findViewById(R.id.ocho);
+        btn9 = (ImageButton) findViewById(R.id.nueve);
+        btnsuma = (ImageButton) findViewById(R.id.suma);
+        btnresta = (ImageButton) findViewById(R.id.resta);
+        btnmultiplicacion = (ImageButton) findViewById(R.id.product);
+        btndivision = (ImageButton) findViewById(R.id.div);
+        btnc=(ImageButton) findViewById(R.id.calc_C);
+        btndel=(ImageButton) findViewById(R.id.DEL);
+        btncoma=(ImageButton) findViewById(R.id.punto);
+        btnigual = (ImageButton) findViewById(R.id.igual);
         tv = (TextView) findViewById(R.id.textView);
 
         btn0.setOnClickListener(new View.OnClickListener() {
