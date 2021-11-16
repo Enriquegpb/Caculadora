@@ -20,7 +20,7 @@
 
     <ImageButton
         android:id="@+id/div"
-        android:layout_width="0dp"
+        android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginEnd="25dp"
         app:layout_constraintBottom_toTopOf="@+id/product"
@@ -31,7 +31,7 @@
 
     <ImageButton
         android:id="@+id/igual"
-        android:layout_width="0dp"
+        android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginEnd="21dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
 
     <ImageButton
         android:id="@+id/suma"
-        android:layout_width="0dp"
+        android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginEnd="22dp"
         app:layout_constraintBottom_toTopOf="@+id/resta"
@@ -143,18 +143,17 @@
 
     <ImageButton
         android:id="@+id/product"
-        android:layout_width="0dp"
+        android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="25dp"
         app:layout_constraintBottom_toTopOf="@+id/suma"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/div"
         app:layout_constraintStart_toEndOf="@+id/nueve"
         app:layout_constraintTop_toBottomOf="@+id/div"
         app:srcCompat="@mipmap/boton_multiplicar" />
 
     <ImageButton
         android:id="@+id/resta"
-        android:layout_width="0dp"
+        android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginEnd="22dp"
         app:layout_constraintBottom_toTopOf="@+id/igual"
