@@ -6,221 +6,218 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/DEL"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/punto"
-        android:layout_width="192dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="110dp"
-        app:layout_constraintEnd_toEndOf="@+id/tres"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/dos"
-        app:srcCompat="@drawable/btnpunto" />
-
-    <ImageButton
-        android:id="@+id/div"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="113dp"
-        app:layout_constraintBottom_toTopOf="@+id/product"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.652"
-        app:layout_constraintStart_toEndOf="@+id/DEL"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.728"
-        app:srcCompat="@drawable/btndivision" />
-
-    <ImageButton
-        android:id="@+id/igual"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="153dp"
-        android:layout_marginBottom="154dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toEndOf="@+id/punto"
-        app:layout_constraintTop_toTopOf="@+id/seis"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@mipmap/boton_igual" />
-
-    <ImageButton
-        android:id="@+id/resta"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/igual"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
-        app:layout_constraintStart_toEndOf="@+id/tres"
-        app:srcCompat="@mipmap/boton_resta" />
-
-    <ImageButton
-        android:id="@+id/product"
-        android:layout_width="48dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/suma"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nueve"
-        app:srcCompat="@mipmap/boton_multiplicar" />
-
     <ImageButton
         android:id="@+id/cero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginEnd="7dp"
-        app:layout_constraintBottom_toBottomOf="@+id/punto"
-        app:layout_constraintEnd_toEndOf="@+id/uno"
-        app:layout_constraintHorizontal_bias="0.761"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/punto"
-        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/punto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uno"
         app:srcCompat="@drawable/botonum0" />
 
     <ImageButton
-        android:id="@+id/suma"
-        android:layout_width="48dp"
+        android:id="@+id/div"
+        android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DEL"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/btndivision" />
+
+    <ImageButton
+        android:id="@+id/igual"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/punto"
+        app:layout_constraintTop_toBottomOf="@+id/resta"
+        app:srcCompat="@mipmap/boton_igual" />
+
+    <ImageButton
+        android:id="@+id/suma"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="22dp"
         app:layout_constraintBottom_toTopOf="@+id/resta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/seis"
+        app:layout_constraintTop_toBottomOf="@+id/product"
         app:srcCompat="@mipmap/boton_suma" />
-
-    <ImageButton
-        android:id="@+id/uno"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="212dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/dos"
-        app:srcCompat="@drawable/botonum1" />
 
     <ImageButton
         android:id="@+id/dos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="14dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/punto"
         app:layout_constraintEnd_toStartOf="@+id/tres"
-        app:layout_constraintTop_toTopOf="@+id/tres"
+        app:layout_constraintStart_toEndOf="@+id/uno"
+        app:layout_constraintTop_toBottomOf="@+id/cinco"
         app:srcCompat="@drawable/botonum2" />
 
     <ImageButton
         android:id="@+id/tres"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
-        app:layout_constraintBottom_toTopOf="@+id/igual"
-        app:layout_constraintEnd_toEndOf="@+id/seis"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/punto"
+        app:layout_constraintEnd_toStartOf="@+id/resta"
+        app:layout_constraintStart_toEndOf="@+id/dos"
+        app:layout_constraintTop_toBottomOf="@+id/seis"
         app:srcCompat="@drawable/botonum3" />
 
     <ImageButton
         android:id="@+id/cinco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cuatro"
-        app:layout_constraintStart_toStartOf="@+id/ocho"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/dos"
+        app:layout_constraintEnd_toStartOf="@+id/seis"
+        app:layout_constraintStart_toEndOf="@+id/cuatro"
+        app:layout_constraintTop_toBottomOf="@+id/ocho"
         app:srcCompat="@drawable/botonum5" />
 
     <ImageButton
         android:id="@+id/cuatro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="79dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
         app:layout_constraintBottom_toTopOf="@+id/uno"
+        app:layout_constraintEnd_toStartOf="@+id/cinco"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/siete"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/siete"
         app:srcCompat="@drawable/btn4" />
 
     <ImageButton
-        android:id="@+id/seis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        app:layout_constraintStart_toStartOf="@+id/nueve"
-        app:layout_constraintTop_toBottomOf="@+id/nueve"
-        app:srcCompat="@drawable/botonum6" />
+        android:id="@+id/punto"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/igual"
+        app:layout_constraintStart_toEndOf="@+id/cero"
+        app:layout_constraintTop_toBottomOf="@+id/dos"
+        app:srcCompat="@drawable/btnpunto" />
 
     <ImageButton
-        android:id="@+id/siete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/ocho"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:id="@+id/DEL"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/nueve"
+        app:layout_constraintEnd_toStartOf="@+id/div"
+        app:layout_constraintStart_toEndOf="@+id/calc_C"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/btndel" />
+
+    <ImageButton
+        android:id="@+id/calc_C"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/siete"
+        app:layout_constraintEnd_toStartOf="@+id/DEL"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/DEL"
-        app:srcCompat="@drawable/botonum7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/btnc" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/calc_C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/ocho"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/cinco"
-        app:layout_constraintEnd_toStartOf="@+id/nueve"
-        app:srcCompat="@drawable/botonum8" />
+        android:id="@+id/product"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/suma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nueve"
+        app:layout_constraintTop_toBottomOf="@+id/div"
+        app:srcCompat="@mipmap/boton_multiplicar" />
+
+    <ImageButton
+        android:id="@+id/resta"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/igual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tres"
+        app:layout_constraintTop_toBottomOf="@+id/suma"
+        app:srcCompat="@mipmap/boton_resta" />
 
     <ImageButton
         android:id="@+id/nueve"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="102dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/ocho"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/seis"
+        app:layout_constraintEnd_toStartOf="@+id/product"
+        app:layout_constraintStart_toEndOf="@+id/ocho"
+        app:layout_constraintTop_toBottomOf="@+id/DEL"
         app:srcCompat="@drawable/botonum9" />
 
     <ImageButton
-        android:id="@+id/calc_C"
+        android:id="@+id/seis"
         android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="22dp"
-        app:layout_constraintBottom_toTopOf="@+id/siete"
-        app:layout_constraintEnd_toStartOf="@+id/DEL"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.826"
-        app:srcCompat="@drawable/btnc" />
+        android:layout_height="62dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/tres"
+        app:layout_constraintEnd_toStartOf="@+id/suma"
+        app:layout_constraintStart_toEndOf="@+id/cinco"
+        app:layout_constraintTop_toBottomOf="@+id/nueve"
+        app:srcCompat="@drawable/botonum6" />
 
     <ImageButton
-        android:id="@+id/DEL"
-        android:layout_width="156dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="215dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="216dp"
-        app:layout_constraintBottom_toBottomOf="@+id/resta"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/siete"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444"
-        app:srcCompat="@drawable/btndel" />
+        android:id="@+id/ocho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/cinco"
+        app:layout_constraintEnd_toStartOf="@+id/nueve"
+        app:layout_constraintStart_toEndOf="@+id/siete"
+        app:layout_constraintTop_toBottomOf="@+id/DEL"
+        app:srcCompat="@drawable/botonum8" />
+
+    <ImageButton
+        android:id="@+id/siete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/cuatro"
+        app:layout_constraintEnd_toStartOf="@+id/ocho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calc_C"
+        app:srcCompat="@drawable/botonum7" />
+
+    <ImageButton
+        android:id="@+id/uno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/cero"
+        app:layout_constraintEnd_toStartOf="@+id/dos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuatro"
+        app:srcCompat="@drawable/botonum1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
