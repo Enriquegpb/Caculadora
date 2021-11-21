@@ -250,6 +250,7 @@ public class MainActivity extends AppCompatActivity {
                     btncoma.setTextColor(Color.WHITE);
                     btndel.setTextColor(Color.WHITE);
                     btnigual.setTextColor(Color.WHITE);
+                    tv.setTextColor(Color.DKGRAY);
                 }
             }
         });
