@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
                 tv.setText(tv.getText().subSequence(0,tv.getText().length()-1));
             }
         });
-        sw.setBackgroundColor(Color.GRAY);
+        //sw.setBackgroundColor(Color.GRAY);
         sw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
