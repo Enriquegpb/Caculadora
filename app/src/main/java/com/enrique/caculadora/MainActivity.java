@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (tv.getText().equals("0")){
+                    tv.setText("0");
+                }else
                 tv.setText(tv.getText()+"0");
             }
         });
@@ -146,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 op2=tv.getText().toString();
                 tv.setText(String.valueOf(MetodoCalcularResultado(Double.parseDouble(op1),Double.parseDouble(op2),operador)));
+
             }
         });
 
